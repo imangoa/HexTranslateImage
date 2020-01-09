@@ -1,0 +1,111 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.26.2.0
+Copyright (C) 2018 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 123 123, 123, LIC=21E56-DSC2I-KPIZY-I1N36-L82H2-F2FLP
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.26.2.0
+Toolchain Path:  D:\SmartCar\KEIL\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.26.2.0
+Dialog DLL:      DCM.DLL V1.17.2.0
+Target DLL:      CMSIS_AGDI.dll V1.30.6.0
+Dialog DLL:      TCM.DLL V1.36.1.0
+ 
+<h2>Project:</h2>
+C:\Users\81536\Desktop\RT1021new\SCC8660-CSI 1.8TFT Demo\MDK\RT102X.uvprojx
+Project File Date:  01/10/2020
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'D:\SmartCar\KEIL\ARM\ARMCC\Bin'
+Build target 'nor_zf_ram'
+compiling Motor.c...
+UserDriver\Motor.c(14): warning:  #1294-D: Old-style function MOTOR_SetPwm
+  void MOTOR_SetPwm(duty)
+UserDriver\Motor.c(14): warning:  #1079-D: standard requires that parameter "duty"  be given a type by a subsequent declaration ("int" assumed)
+  void MOTOR_SetPwm(duty)
+UserDriver\Motor.c: 2 warnings, 0 errors
+compiling Servo.c...
+UserDriver\Servo.h(9): warning:  #1295-D: Deprecated declaration SERVO_PwmInit - give arg types
+  void SERVO_PwmInit();
+UserDriver\Servo.c(10): warning:  #1294-D: Old-style function SERVO_SetPwm
+  void SERVO_SetPwm(duty)
+UserDriver\Servo.c(10): warning:  #1079-D: standard requires that parameter "duty"  be given a type by a subsequent declaration ("int" assumed)
+  void SERVO_SetPwm(duty)
+UserDriver\Servo.c: 3 warnings, 0 errors
+compiling main.c...
+UserDriver\Transmit.h(28): warning:  #1295-D: Deprecated declaration TRANSMIT_ExtractRgb565Tran - give arg types
+  void  TRANSMIT_ExtractRgb565Tran();
+UserDriver\Transmit.h(30): warning:  #1295-D: Deprecated declaration TRANSMIT_ExtractGrayTran - give arg types
+  void  TRANSMIT_ExtractGrayTran();
+UserDriver\Transmit.h(33): warning:  #1295-D: Deprecated declaration TRANSMIT_ExtractRgb888Tran - give arg types
+  void TRANSMIT_ExtractRgb888Tran();
+UserDriver\Transmit.h(35): warning:  #1295-D: Deprecated declaration TRANSMIT_ExtractBinaryTran - give arg types
+  void TRANSMIT_ExtractBinaryTran();
+UserDriver\Trans.h(37): warning:  #1295-D: Deprecated declaration TRANS_Init - give arg types
+  	void TRANS_Init();
+UserDriver\Trans.h(65): warning:  #1295-D: Deprecated declaration TRANS_Binary - give arg types
+  void TRANS_Binary( );
+..\USER\src\main.c: 6 warnings, 0 errors
+compiling Encoder.c...
+UserDriver\Transmit.h(28): warning:  #1295-D: Deprecated declaration TRANSMIT_ExtractRgb565Tran - give arg types
+  void  TRANSMIT_ExtractRgb565Tran();
+UserDriver\Transmit.h(30): warning:  #1295-D: Deprecated declaration TRANSMIT_ExtractGrayTran - give arg types
+  void  TRANSMIT_ExtractGrayTran();
+UserDriver\Transmit.h(33): warning:  #1295-D: Deprecated declaration TRANSMIT_ExtractRgb888Tran - give arg types
+  void TRANSMIT_ExtractRgb888Tran();
+UserDriver\Transmit.h(35): warning:  #1295-D: Deprecated declaration TRANSMIT_ExtractBinaryTran - give arg types
+  void TRANSMIT_ExtractBinaryTran();
+UserDriver\Encoder.c: 4 warnings, 0 errors
+compiling Transmit.c...
+UserDriver\Transmit.h(28): warning:  #1295-D: Deprecated declaration TRANSMIT_ExtractRgb565Tran - give arg types
+  void  TRANSMIT_ExtractRgb565Tran();
+UserDriver\Transmit.h(30): warning:  #1295-D: Deprecated declaration TRANSMIT_ExtractGrayTran - give arg types
+  void  TRANSMIT_ExtractGrayTran();
+UserDriver\Transmit.h(33): warning:  #1295-D: Deprecated declaration TRANSMIT_ExtractRgb888Tran - give arg types
+  void TRANSMIT_ExtractRgb888Tran();
+UserDriver\Transmit.h(35): warning:  #1295-D: Deprecated declaration TRANSMIT_ExtractBinaryTran - give arg types
+  void TRANSMIT_ExtractBinaryTran();
+UserDriver\Transmit.c(14): warning:  #177-D: variable "weight_factor"  was declared but never referenced
+  	int weight_factor[59]={1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1};
+UserDriver\Transmit.c(16): warning:  #177-D: variable "t"  was declared but never referenced
+  	int i=0,j,k=0,t=0,temp;
+UserDriver\Transmit.c(47): warning:  #177-D: variable "n888Color"  was declared but never referenced
+  	unsigned int n888Color = 0;
+UserDriver\Transmit.c(132): warning:  #940-D: missing return statement at end of non-void function "RGB5652RGB888Send" 
+  }
+UserDriver\Transmit.c(124): warning:  #177-D: variable "n888Color"  was declared but never referenced
+      unsigned int n888Color = 0;
+UserDriver\Transmit.c(138): warning:  #177-D: variable "weight_factor"  was declared but never referenced
+  		int weight_factor[59]={1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1};
+UserDriver\Transmit.c(172): warning:  #177-D: variable "weight_factor"  was declared but never referenced
+  		int weight_factor[59]={1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1};
+UserDriver\Transmit.c: 11 warnings, 0 errors
+linking...
+Program Size: Code=55796 RO-data=2592 RW-data=576 ZI-data=53696  
+".\Objects\RT102X.axf" - 0 Error(s), 26 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: NXP
+                http://mcuxpresso.nxp.com/cmsis_pack/repo/NXP.MIMXRT1021_DFP.12.0.0.pack
+                NXP.MIMXRT1021_DFP.12.0.0
+                Device Family Pack for MIMXRT1021
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_nor_zf_ram
+  D:\SmartCar\KEIL\ARM\PACK\NXP\MIMXRT1021_DFP\12.0.0
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:10
+</pre>
+</body>
+</html>
