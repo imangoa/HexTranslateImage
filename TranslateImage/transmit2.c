@@ -17,7 +17,7 @@
   char name[100] ="SmartCarImage/";
    char filename[200];
 
-const char* RAD = "test.txt";
+const char* RAD = "test.swp";
 
 void createImage();
 int RGB5652RGB888(unsigned short n565Color);
