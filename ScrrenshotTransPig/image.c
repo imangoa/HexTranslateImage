@@ -16,27 +16,26 @@ typedef struct postion_Element
 }POSTION;
 
 //初始化位置
-POSTION inital;
+POSTION inital={9,40};
 POSTION current={0,0};
-inintal.x=9;
-inital.y=40;
+
 
 
 //使用matlab实现比较好，若使用C语言则还要将matlab里面的图像数组导出来，再进行抽取。
-POSTION image[SIZE];
-int M[IMWIDTH][IMHEIGHT];
+int image[SIZE];
+int M[IMWIDTH][IMHIGHT];
 int count=0;
 
 int main()
 {
 	//数组结界不好处理，用current判断
-	while(count<MSiZE)
+	while(count<SIZE)
 	{
 		image[count]=M[inital.x+current.x][inital.y+current.y];
 		if(current.x>IMWIDTH)
 		{
 			current.x=0;
-			current.y+=HDIST；
+			current.y+=HDIST;
 		}
 		else
 		{
