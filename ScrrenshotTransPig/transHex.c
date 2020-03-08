@@ -3,7 +3,7 @@
 #define start 480  //从第三行开始取
 
 FILE *fp;
-char name[20];
+char name[20]="m.txt";
 char outName[100]="ElemImage.swp";
 int val[100000];
 uint8 prin[2000];
@@ -20,8 +20,8 @@ int getval()
 {
 	int count=1;   //计数，若为单数读入到数组，为双数不读
 	int index=0;
-	puts("input filename");
-	scanf("%s",name);
+	//puts("input filename");
+	//scanf("%s",name);
 	fp =fopen(name,"r");
 	char wsp;
 	if (fp==NULL)
@@ -84,7 +84,7 @@ void TRANS_hex()
 
 void output()             //将1200个8位数据输入文件
 {
-	fp=fopen(outName,"w");
+	fp=fopen(outName,"wb");
 	fprintf(fp,"%c",HEAD.type);
 	fprintf(fp,"%c",HEAD.height);
 	fprintf(fp,"%c",HEAD.width);
