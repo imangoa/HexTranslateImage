@@ -189,6 +189,7 @@
       <workItem from="1583625841277" duration="845000" />
       <workItem from="1583645168917" duration="2982000" />
       <workItem from="1583671050471" duration="20000" />
+      <workItem from="1583675080859" duration="210000" />
     </task>
     <servers />
   </component>
@@ -200,35 +201,35 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="170" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1579687799343" />
-    <state width="746" height="212" key="GridCell.Tab.0.bottom" timestamp="1583648174794">
+    <state width="1493" height="212" key="GridCell.Tab.0.bottom" timestamp="1583675290893">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="746" height="212" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583648174794" />
-    <state width="746" height="212" key="GridCell.Tab.0.center" timestamp="1583648174794">
+    <state width="1493" height="212" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583675290893" />
+    <state width="1493" height="212" key="GridCell.Tab.0.center" timestamp="1583675290893">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="746" height="212" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1583648174794" />
-    <state width="746" height="212" key="GridCell.Tab.0.left" timestamp="1583648174794">
+    <state width="1493" height="212" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1583675290893" />
+    <state width="1493" height="212" key="GridCell.Tab.0.left" timestamp="1583675290893">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="746" height="212" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1583648174794" />
-    <state width="746" height="212" key="GridCell.Tab.0.right" timestamp="1583648174794">
+    <state width="1493" height="212" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1583675290893" />
+    <state width="1493" height="212" key="GridCell.Tab.0.right" timestamp="1583675290893">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="746" height="212" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1583648174794" />
+    <state width="1493" height="212" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1583675290893" />
     <state x="272" y="57" key="SettingsEditor" timestamp="1578747382798">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="272" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1578747382798" />
-    <state x="461" y="240" key="com.intellij.ide.util.TipDialog" timestamp="1583671050480">
+    <state x="461" y="240" key="com.intellij.ide.util.TipDialog" timestamp="1583675084600">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="461" y="240" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1583671050480" />
+    <state x="461" y="240" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1583675084600" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ElemAnalyser_SmartCar$Remocon.coverage" NAME="Remocon Coverage Results" MODIFIED="1578789233213" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ElemAnalyser_SmartCar$ElemChannel.coverage" NAME="ElemChannel Coverage Results" MODIFIED="1578748256539" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ElemAnalyser_SmartCar$ElemImage.coverage" NAME="ElemImage Coverage Results" MODIFIED="1583626147848" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/ElemAnalyser_SmartCar$ElemAnalyser.coverage" NAME="ElemAnalyser Coverage Results" MODIFIED="1583648163197" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ElemAnalyser_SmartCar$ElemAnalyser.coverage" NAME="ElemAnalyser Coverage Results" MODIFIED="1583675098945" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
