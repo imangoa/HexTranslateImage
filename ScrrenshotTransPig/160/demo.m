@@ -1,11 +1,11 @@
-image=imread('入环靠外.png');
+image=imread('S弯弯道1.png');
 image2gray=rgb2gray(image);
 T = graythresh(image2gray);
 M = imbinarize(image2gray,T);%二值化
 
 % 变量申明
-M_left = zeros(1,500) ;  %记录左边线的轨迹
-M_right = zeros(1,500) ; %记录右边线的轨迹
+M_left =[] ;  %记录左边线的轨迹
+M_right = []; %记录右边线的轨迹
 flag = 0;     %判断图的三种类型。
 
 
@@ -21,7 +21,7 @@ if M(63,1)==1&&M(63,160)==0
 
     while M(i,1)==1      %得到最左边白点连续扩展到的最高点          
         M_left(num*2+1)=i;  %记录纵坐标    
-        M_left(num*2+2)=0;  %记录横坐标
+        M_left(num*2+2)=1;  %记录横坐标
         final =i;
         i=i-1;        
         num=num+1;
@@ -50,11 +50,11 @@ elseif M(63,160)==1&&M(63,1)==0
     num = 0;
     i =63;
 
-    while M(i,160)
+    while M(i,160)==1
         M_right(num*2+1) = i;
         M_right(num*2+2) = 160;
-        i = i-1;
         final =i;
+        i = i-1;
         num = num+1;
     end
     
@@ -100,14 +100,67 @@ end
 
 
 
+%当处于第一种情况时
+if flag == 0
+    yi=M_right(2);
+    xi=M_right(1);
+    num =0;
+    while M_right(2*num+1)>=final
+        num =num+1;
+        if M(xi,yi-1)==0
+            yi=yi-1;
+            M_right(2*num+1)=xi;M_right(2*num+2)=yi;
+            direction=1;
+            continue;
+        end
+        if M(xi-1,yi-1)==0
+            xi=xi-1;yi=yi-1;
+            M_right(2*num+1)=xi;M_right(2*num+2)=yi;
+            direction=2;
+            continue;
+        end
+        if M(xi-1,yi)==0
+            xi=xi-1;
+            M_right(2*num+1)=xi;M_right(2*num+2)=yi;
+            direction=3;
+            continue;
+        end
+        if M(xi-1,yi+1)==0
+            xi=xi-1;yi=yi+1;
+            M_right(2*num+1)=xi;M_right(2*num+2)=yi;
+            direction=4;
+            continue;
+        end
+        if M(xi,yi+1)==0
+           yi=yi+1;
+           M_right(2*num+1)=xi;M_right(2*num+2)=yi;
+           direction=5;
+           continue;
+        end
+        if M(xi+1,yi+1)==0
+           xi=xi+1;yi=yi+1;
+           M_right(2*num+1)=xi;M_right(2*num+2)=yi;
+           direction=6;
+           continue;
+        end
+        if M(xi+1,yi)==0
+           xi=xi+1;
+           M_right(2*num+1)=xi;M_right(2*num+2)=yi;
+           direction=7;
+           continue;             
+        end
+    end
+    
+end
 
 
-%当处于第一种情况时，划线程序
+
+%当处于第二种情况时，划线程序
 if flag==1
     num = 0;
     yi = M_left(2);
     xi = M_left(1);
-    while M_left(2*num+1)>final
+    while M_left(2*num+1)>=final
         num=num+1;
         
         
@@ -155,12 +208,16 @@ if flag==1
         end   
     end
 end
+
+
 N=ones(63,160);
-for a=1:25
+r_end=length(M_right)/2;
+l_end=length(M_left)/2;
+for a=1:l_end
     xn=M_left(2*a-1);yn=M_left(2*a);
     N(xn,yn)=0;
 end
-for a=1:28
+for a=1:r_end
     xn=M_right(2*a-1);
     yn=M_right(2*a);
     N(xn,yn)=0;
